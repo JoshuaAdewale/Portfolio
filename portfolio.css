@@ -16,8 +16,8 @@
   }
 html
 {
-    /* box-sizing: border-box;
-    */
+    box-sizing: border-box;
+    outline: yellowgreen 2px solid;
 }
 *, *before, *after
 {
@@ -25,11 +25,20 @@ html
     margin: 0;
     padding: 0;
     border: transparent;
+    scroll-behavior: smooth;
+    box-sizing: inherit;    
 }
 
+body
+{
+    margin:0;
+    padding:0;
+    
+}
 img
 {
-    max-width: 100%;
+    max-width: 100%;  
+
 }
 
 /* Header */
@@ -47,8 +56,8 @@ header {
 
 header h1 {
     margin: 0;
+    
 }
-
 /* Logo */
 .logo
 {
@@ -96,26 +105,13 @@ nav ul li a {
     text-decoration: none;
 }
 
-.cvdownload
-{
-    padding: 10px;
-}
 
-.cvd
-{
-    width: 150px;
-    height: 30px;
-    background-color: var(--White);
-    color: var(--Darkest-Blue);
-    padding: 3px;
-    /* border-radius: 12px; */
-    border: none;
-    font-weight: 700;
-}
-/* Sections */
 section
+/* Sections */
 {
-    height:75vh;
+    height:95vh;
+    padding:0px 15px 0px 15px;
+    text-align: center;
 }
 
 /* Main Content  linear-gradient(to left var(--Darkest-Blue),var(--Light-Grey), */
@@ -126,19 +122,63 @@ main {
 #home
 {
     display: flex;
-    background-image: url(./IMG_3702.JPEG);
+    background-image: linear-gradient(),url(./IMG_3702.JPEG);
     background-size: cover;
+    background-position: top right;
     justify-content: center;
-    /* background-repeat: no-repeat;
-    filter: blur(10px); */
-    /* background-image: linear-gradient(to right var(--Darkest-Blue),var(--Mid-Grey)), url(/IMG_3702.JPEG); */
+    background-repeat: norepeat;
+    /*filter: blur(10px); 
+     background-image: linear-gradient(to right var(--Darkest-Blue),var(--Mid-Grey)), url(/IMG_3702.JPEG); */
 }
+.cvdownload
+{
+    padding: 10px;
+}
+
+.cvd
+{
+    width: 150px;
+    height: 50px;
+    background-color: var(--White);
+    color: var(--Darkest-Blue);
+    padding: px;
+    /* border-radius: 12px; */
+    border: none;
+    font-weight: 700;
+    border-radius: 80px;
+}
+
+.cvd.one
+{
+    border: 2px solid var(--Darkest-Blue);
+}
+
+/* 
+.cvd.one:hover
+{
+    border: 2px solid black;
+    background: var(--Darkest-Blue);
+    color: var(--White);
+} */
+
+.cvd.two
+{
+    background:var(--Darkest-Blue);
+    color: var(--White);
+}
+
+/* .cvd.two:hover
+{
+    background:var(--White);
+    color: var(--Darkest-Blue);
+    border: 2px solid var(--Darkest-Blue);
+} */
 
 .homepaper
 {
-    position: relative;
+    position: static;
     width:100%;
-    padding: 50px;
+    padding: 50px 50px 0px 50px;
     /* background-image: linear-gradient(to bottom,var(--Dark-Grey), var(--Darkest-Blue)),url(/); */
     /* opacity: 20%; */
     /* background-position: center;
@@ -149,7 +189,7 @@ main {
 
 .headtext
 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     color: var(--Mid-Dark-Blue);
     display: block;
     text-align: center;
@@ -211,13 +251,122 @@ main {
     color: var(--Darkest-Blue);
     font-size: 1.2rem;
     background-image: url(/IMG_3702.JPEG);
-
+    padding: 0px;
+    height: 65vh;
 }
 
 #about h2
 {
     text-align: center;
 }
+
+.abtimg 
+{
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* box-shadow: 10px 8px 5px 5px; */
+}
+
+.abtcont
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.paragraph1
+{
+    width: 500px;
+    padding: 20px 20px 10px 5px ;
+    text-align: left;
+}
+
+
+.more
+{
+    background-color: var(--Darkest-Blue);
+    color: var(--White);
+    padding:3px;
+    margin: 0px 0px 0px 10px;
+    border: none;
+    width: 80px;
+    height: 35px;
+}
+
+#services
+{
+    justify-content: center;
+    height: 85vh;
+}
+
+.servecont
+{
+    display: flex;
+    justify-content: center;
+    outline: #000000 2px solid;
+}
+.servetop
+{
+    display: flex;
+    width: 700px;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    outline: #ee0505 2px solid;
+}
+
+.servetray
+{
+    height: 200px;
+    padding: 10px 0px 0px 0px;
+    outline: #13294B 3px solid;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+.serve
+{
+    outline: #13294B 4px solid;   
+    align-content: center;
+}
+#skills
+{
+    background-color: var(--Mid-Grey);
+    height: auto;
+}
+/* .cardboard
+{
+    max-width: 1200px;
+    max-height: 1200px;
+    height: 500px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: var(--Dark-Grey);
+    color: var(--White);
+    display: flex;
+    gap: 5px;    
+    margin: 0px 20px 0px 5px;
+} */
+
+.card
+{  
+    width: 300px;
+    height: 350px;
+    border: 2px solid;
+    background-color: var(--Dark-Blue);
+    color: var(--White);
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.iconf
+{
+    
+}
+
 /* Footer */
 footer {
     background-color: #333;
@@ -230,19 +379,26 @@ footer
 {
     background-color: var(--Darkest-Blue);
 }
+
+
+
+
+
 /* Responsive styles for smaller screens */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1080px)
+{
     *
-    {
+    /* {
         overflow-x: hidden;
-    }
+    } */
     .container {
-      width: 100%;
-    }
+      width: 90%;
+      height: 95vh;
+    } 
   
     header
     {
-        width: 100%;
+        /* width: 100%; */
         display: flex;
         justify-content: space-between;
         padding:0px 20px 0px 20px;
@@ -267,7 +423,8 @@ footer
     font-weight: 900;
     background-color: var(--Mid-Dark-Blue);
 }
-    nav 
+
+nav 
     {
       display: none;
       padding: 5px;
@@ -275,7 +432,7 @@ footer
   
     nav ul li
     {
-      display: block;
+      display: none;
       margin: 15px 0;
       height: 35px;
     }
@@ -287,19 +444,23 @@ footer
 
     .section
     {
-        height: 100vh;
-        padding: 10px;
+       height:85vh;
+        /* padding: 10px; */
     }
 
     #home
     {
         display: block;
-        gap: 5px;
+        justify-content:center;
+        align-items: center;
     }
 
     .cvdownload
     {
+        position: absolute;
         display:flex;
+        margin:80px 0px 0px 0px;
+        justify-content: center;
     }
 
     .cvd
@@ -307,20 +468,28 @@ footer
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 110px;
+        width: 130px;
         font-weight: 700;
+        margin: 20px 0px 0px 0px;
     }
-
-    .cvd>.one
+/* 
+    .one
     {
         background-color: transparent;
-        border: 2px solid var(--White);
-        color:var(--White);
+        border: 2px solid var(--Darkest-Blue);
+        color:var(--Darkest-Blue);
     }
+
+    .two
+    {
+        background-color: var(--Darkest-Blue);
+        color:var(--White);
+    } */
 
     .headtext
     {
-        font-size: 3.2rem;
+        font-size: 2.5rem;
+        padding-right: 88px;
     }
 
     .headleft
@@ -335,7 +504,6 @@ footer
         width: 300px;
         justify-content:center;
         align-items: center;
-        z-index: -1;
         margin-right: 155px;
     }
 
@@ -346,13 +514,71 @@ footer
         height:250px;
         width: 250px;
         justify-content: center;
-        align-items: center;
-        
+        align-items: center;        
     }
 
     .headpic
     {
         display: none;
+        width: 70%;
+        height: 70%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 80px;
     }
+
+    .abtcont
+    {
+        display: block;
+        padding: 1px;
+    }
+    .cardboard
+    {
+        display: block;
+        height: auto;
+    }
+    .card
+{
+    display: block;
+    margin: 10px 0px 10px 60px;   
+    width: 200px;
+    height: 150px;
+    background-color: var(--Dark-Blue);
+    color: var(--White);
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+    
+  }
+
+
+  @media screen and (max-width: 875px) 
+  {
+    /* Tablet Styles */
+    body {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-top: 35px;
+        margin-bottom: 18px;
+    }
+
+    /* Adjust other elements for tablet */
+}
+
+@media screen and (max-width: 770px) {
+    
+    /* Adjust other elements for desktop */
+}
+
+@media (max-width: 700px)
+{}
+
+  @media screen and (max-width: 380px) 
+  {
 
   }

@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joshua Adewale - Web Developer Portfolio</title>
+    <title>Joshua Adewale-Portfolio</title>
     <link  rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
     <script src="portfolio.js" defer></script>
 </head>
 <body>
@@ -28,20 +29,19 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="cvdownload">
-            <button class="cvd one">CONTACT AJ</button>
-            <button class="cvd two">DOWNLOAD CV</button>
-        </div>
+      
     </header>
     <main>
         <section id="home" class="section one">
             <div class="homepaper">
-            <h1 class="headtext">Welcome
-                <span>To</span>
+            <h1 class="headtext"><i></i>Hi<br>
+                <span>I'm</span>
                 <br>
-                Joshua Adewale's
-                <br>
-                <span>Portfolio.</span></h1>
+                Joshua Adewale</h1>
+                <div class="cvdownload">
+                    <button class="cvd one">CONTACT AJ</button>
+                    <button class="cvd two">DOWNLOAD CV</button>
+                </div>
             </div>
         
         <div class="headleft">
@@ -57,36 +57,91 @@
            
             <h2>About</h2>
             <div class="abtcont">
-                .abtimg
-            <p>Hi there! I'm Joshua Adewale, an accomplished web developer with a strong foundation in creating dynamic and user-centric websites. With a meticulous eye for detail and a passion for staying ahead of industry trends, I strive to deliver exceptional results that exceed expectations.</p>
-           </div>
-            <button onclick()>MORE</button>
+                <div class="abtimg">
+                    <img src="./IMG_3703.JPEG" alt="picture of Joshua with GDG Team Lead">
+                </div>
+            
+                <div class="paragraph1">
+                    <p>Hi there! I'm Joshua Adewale, an accomplished web developer with a strong foundation in creating dynamic and user-centric websites. With a meticulous eye for detail and a passion for staying ahead of industry trends, I strive to deliver exceptional results that exceed expectations.</p>
+                    <button onclick=onclick() class="more">MORE</button>  
+                </div>
+                
+           </div>            
         
         </section>
         <section id="services" class="section three">
             <h2>Services</h2>
+            <div class="servecont">
+            <div class="servetop">
             <p>As a versatile web developer, I offer a comprehensive suite of services to meet your digital needs. From responsive website design and development to robust web application solutions, I specialize in crafting tailored solutions that align with your goals and objectives.</p>
+        </div>
+    </div>
+    <br>
+    <div class="servetray">
+        <div class="serve 1">
+            <i class="fa fa-desktop" aria-hidden="true"> 90%</i>
+            <p>Website Development</p>
+            <span class="servepptext"><h5>i will develop reponsive and fast website with the 5+years experience</h5></span>
+        </div>
+
+        <div class="serve 2">
+            <i class="fa fa-database" aria-hidden="true"> 85%</i>
+            <p>Data Analysis</p>
+            <span class="servepptext"><h5>i will develop reponsive and fast website with the 5+years experience</h5></span>
+        </div>
+
+        <div class="serve 3">
+            <i class="fa fa-image" aria-hidden="true"> 75%</i>
+
+            <p>Graphics Design</p>
+            <span class="servepptext"><h5>i will develop reponsive and fast website with the 5+years experience</h5></span>
+        </div>
+
+    </div>
         </section>
         <section id="skills" class="section four">
             <h2>Skills</h2>
             <p>My expertise spans a wide range of technologies and frameworks, including proficiency in HTML5, CSS3, JavaScript, and popular front-end libraries such as React.js and Vue.js. Additionally, I have experience working with back-end technologies like Node.js and databases such as MongoDB and MySQL.</p>
+
+            <div class="cardboard">
+                <div class="card 1">
+                    <p>Frontend<br>(Web Design)</p>
+                    <img src="/Portfolio/abstract-background-with-laptop.png" type="png" alt="web design" class="icon 1">
+                </div>
+                <div class="card 2">
+                    <p>Graphics Design</p>
+                    <img src="/Portfolio/abstract-background-with-laptop.png" type="png" alt="web design" class="icon 2">
+                </div>
+                <div class="card 3">
+                    <p>Data Analysis</p>
+                    <img src="/Portfolio/marketing-employee-announcing-product-sale-3021096.png" type="png" alt="web design" class="icon 3">
+                </div>
+                <div class="card 4">
+                    <p>Email Marketer</p>
+                </div>
+            </div>
         </section>
+
         <section id="education" class="section five">
             <h2>Education</h2>
             <p>I hold a Bachelor's degree in Computer Science from XYZ University, where I cultivated a strong theoretical foundation in computer programming and software development. Through rigorous coursework and hands-on projects, I honed my technical skills and gained valuable insights into the intricacies of web development.</p>
         </section>
+
         <section id="experience" class="section six">
             <h2>Experience</h2>
             <p>With over a decade of experience in the industry, I have had the privilege of collaborating with a diverse clientele, ranging from startups to established enterprises. My portfolio showcases a proven track record of delivering impactful solutions that drive business growth and enhance user engagement.</p>
         </section>
+
         <section id="work" class="section 7">
             <h2>Work</h2>
             <p>Take a closer look at my portfolio to explore a curated selection of projects that showcase my skills and expertise. From sleek and intuitive website designs to complex web applications, each project demonstrates my commitment to quality craftsmanship and innovation.</p>
         </section>
+
         <section id="blog" class="section 8">
             <h2>Blog</h2>
             <p>Stay informed and inspired by exploring my blog, where I share insights, tutorials, and industry best practices. Whether you're a fellow developer seeking to expand your skill set or a business owner looking to enhance your online presence, my blog offers valuable resources to support your journey.</p>
         </section>
+
         <section id="contact" class="section 9">
             <h2>Contact</h2>
             <p>Ready to take the next step? Don't hesitate to reach out to me to discuss your project requirements or inquire about my services. I'm here to help bring your vision to life and look forward to collaborating with you.</p>
@@ -98,6 +153,10 @@
     <script src="portfolio.js"></script>
 </body>
 </html>
+
+  
+
+
 <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
